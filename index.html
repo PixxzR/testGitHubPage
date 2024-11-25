@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiche PDF</title>
+    <meta name="author" content="France Travail" />
+    <meta
+      name="description"
+      content="L’Open Source chez France Travail : Une démarche d’innovation collective visant à renforcer l'innovation, partager des pratiques éthiques et mutualiser des ressources."
+    />
+    <meta
+      name="keywords"
+      content="France Travail, Open Source, OSPO, Innovation, Éco-Conception, TradEmploi, TOSIT, Architecture, RSE"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="L'Open Source chez France Travail : Une Démarche d'Innovation Collective"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez la vision open source de France Travail, notre OSPO et nos projets comme TradEmploi."
+    />
+    <meta property="og:image" content="fiche.png" />
+    <meta property="og:url" content="https://github.com/France-Travail" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>L’Open Source chez France Travail</title>
+    <style>
+      /* Supprime marges/paddings par défaut */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      /* Ajuste l'embed pour qu'il occupe tout l'écran */
+      embed {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
   </head>
-  <body style="margin: 0; padding: 0; text-align: center">
-    <embed src="fiche.pdf" type="application/pdf" width="100%" height="100%" />
-    <p>
-      Votre navigateur ne prend pas en charge les fichiers PDF.
-      <a href="fiche.pdf">Téléchargez la fiche ici.</a>
-    </p>
+  <body>
+    <!-- Affichage du PDF -->
+    <embed src="fiche.pdf" type="application/pdf" />
   </body>
 </html>
