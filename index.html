@@ -3,26 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test GitHub Pages</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Fiche PDF</title>
   </head>
-  <body>
-    <header>
-      <h1>Bienvenue sur mon Test GitHub Pages</h1>
-    </header>
-    <main>
-      <p>Cette page est hébergée avec GitHub Pages pour France Travail.</p>
-      <button id="btn">Cliquez-moi</button>
-    </main>
-    <footer>
-      <p>&copy; 2024 - Mon Site Test</p>
-    </footer>
-
-    <script>
-      const button = document.getElementById("btn");
-      button.addEventListener("click", () => {
-        alert("Bouton cliqué!");
-      });
-    </script>
+  <body style="margin: 0; padding: 0; text-align: center">
+    <embed src="fiche.pdf" type="application/pdf" width="100%" height="100%" />
+    <p>
+      Votre navigateur ne prend pas en charge les fichiers PDF.
+      <a href="fiche.pdf">Téléchargez la fiche ici.</a>
+    </p>
   </body>
 </html>
